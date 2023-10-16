@@ -15,6 +15,8 @@ $result = $conn->query('SELECT * FROM users ORDER BY id ASC');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Option 1: Include in HTML -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 
@@ -31,7 +33,7 @@ $result = $conn->query('SELECT * FROM users ORDER BY id ASC');
             <th scope="col">Email</th>
             <th scope="col">Cidade</th>
             <th scope="col">Data Cadastro</th>
-            <th scope="col">Update | Delete</th>
+            <th scope="col"><i class="bi bi-pencil-fill"></i> Update | <i class="bi bi-trash"></i> Delete</th>
         </thead>
         <?php
         while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
