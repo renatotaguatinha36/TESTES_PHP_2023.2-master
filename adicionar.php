@@ -41,7 +41,7 @@ $stmt->execute();
 
 echo "<div class=\"alert alert-success\">Usuário Cadastrado Com Sucesso!!!</div>";
 
-header("Location: http://localhost/testes_php_2023/index.php");
+header("Location: index.php");
 
 
 }

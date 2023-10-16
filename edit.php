@@ -46,7 +46,7 @@ if(empty($nome) || empty($email) || empty($cidade) || empty($idade)){
     $stmt->bindParam(':idade', $idade);
     $stmt->execute();
 
-    header("Location: http://localhost/testes_php_2023/index.php");
+    header("Location: index.php");
 }
  }
 
