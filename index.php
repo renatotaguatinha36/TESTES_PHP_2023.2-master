@@ -23,7 +23,7 @@ $result = $conn->query('SELECT * FROM users ORDER BY id ASC');
 <body>
 
     <a href="adicionar.html">Cadastrar Usuário</a>
-    <table class="table table-striped table-hover">
+    <table class="table table-dark table-striped">
 
         <thead>
 
