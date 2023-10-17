@@ -108,7 +108,7 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
         <input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
 
-        <input type="submit" name="Update" value="Adicionar" class="btn btn-warning" />
+        <input type="submit" name="Update" value="Atualizar" class="btn btn-warning" />
     </form>
 </body>
 
