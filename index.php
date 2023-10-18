@@ -33,6 +33,7 @@ $result = $conn->query('SELECT * FROM users ORDER BY id ASC');
             <th scope="col">Idade</th>
             <th scope="col">Email</th>
             <th scope="col">Cidade</th>
+            <th sope="col">Senha</th>
             <th scope="col">Data Cadastro</th>
             <th scope="col"><i class="bi bi-pencil-fill"></i> Update | <i class="bi bi-trash"></i> Delete</th>
         </thead>
@@ -44,14 +45,14 @@ $result = $conn->query('SELECT * FROM users ORDER BY id ASC');
             echo '<td>' . $row['idade'] . '</td>';
             echo '<td>' . $row['email'] . '</td>';
             echo '<td>' . $row['cidade'] . '</td>';
+            echo '<td>' .$row['senha'] . '</td>';
             echo '<td>' . date('d/m/Y'), strtotime($row['dataAtual']) . '</td>';
             echo "<td><a href=\"edit.php?id=$row[id]\">Update</a> | <a href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
         }
         echo '</tr>';
         ?>
     </table>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
