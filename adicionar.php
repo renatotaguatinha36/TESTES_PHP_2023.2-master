@@ -38,7 +38,7 @@ $stmt->bindParam(':senha', $senha, PDO::PARAM_STR);
 
 $stmt->execute();
 
-
+echo $stmt->rowCount() . " records UPDATED successfully";
 echo "<div class=\"alert alert-success\">Usuário Cadastrado Com Sucesso!!!</div>";
 
 header("Location: index.php");
