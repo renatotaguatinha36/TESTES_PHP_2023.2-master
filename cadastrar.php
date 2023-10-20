@@ -32,7 +32,7 @@ $stmt->bindValue(':email', $email, PDO::PARAM_STR);
 $stmt->execute();
 
 if ($stmt->rowCount() > 0) {
-    echo 'Usuário cadastrado com sucesso';
+    echo 'Usuário cadastrado com sucesso'. $first_name;
 } else {
     echo 'Usuário não cadastrado';
 }
