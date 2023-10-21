@@ -60,6 +60,7 @@ $result = $conn->query('SELECT * FROM users ORDER BY id ASC');
 
 
 </table>
+Copyright &copy; 2010-<?php echo date("Y")?>
 </body>
 
 </html>
