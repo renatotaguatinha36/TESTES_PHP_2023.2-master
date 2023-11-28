@@ -25,7 +25,7 @@ $senha = md5($_POST['senha']);
 
  }
 
- echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+ echo "<br/><a href='javascript:self.history.back();'>Go Back(Voltar)</a>";
 
 $stmt = $conn->prepare("INSERT INTO users(nome, email, cidade, idade, dataAtual, senha)VALUES(:nome, :email,:cidade, :idade, NOW(), :senha)");
 $conn->exec("set names utf8mb4");
