@@ -13,5 +13,5 @@ echo "<h6>Connected Successfully with Database: $database</h6>";
 
 }catch(PDOException $e){
 
-    echo "Error: " . $e->getMessage() . '<br/> '. $e->getTraceAsString();
+    echo "Error Message: " . $e->getMessage() . '<br/> '. $e->getTraceAsString();
 }
